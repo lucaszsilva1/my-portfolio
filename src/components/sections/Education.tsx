@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { communities, certifications } from '../../data/skills';
+import { useLanguage } from '../../context/LanguageContext';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -10,6 +11,10 @@ const fadeInUp = {
 };
 
 export const Education: React.FC = () => {
+  const { t } = useLanguage();
+  const communities = t('education.communities');
+  const certifications = t('education.certifications');
+
   return (
     <section id="education" className="py-24 md:py-32 bg-white text-black border-b border-black">
       <div className="max-w-7xl mx-auto px-6">
@@ -17,7 +22,7 @@ export const Education: React.FC = () => {
           {...fadeInUp}
           className="font-mono text-xs uppercase tracking-widest mb-16"
         >
-          05. COMUNIDADE & FORMAÇÃO
+          {t('education.subtitle')}
         </motion.div>
       </div>
 
@@ -26,13 +31,13 @@ export const Education: React.FC = () => {
         {/* Left Column: Community */}
         <div className="w-full md:w-1/2 border-b md:border-b-0 md:border-r border-black flex flex-col">
           <div className="p-6 md:p-12 lg:p-16 border-b border-black bg-black text-white">
-            <h3 className="font-display text-4xl md:text-5xl uppercase mb-6">COMUNIDADE & PALESTRAS</h3>
+            <h3 className="font-display text-4xl md:text-5xl uppercase mb-6">{t('education.communityTitle')}</h3>
             <p className="text-sm leading-relaxed text-gray-300 font-mono">
-              COMPARTILHANDO CONHECIMENTO SOBRE IA GENERATIVA, DADOS E ENGENHARIA DE SOFTWARE.
+              {t('education.communityDesc')}
             </p>
           </div>
           <div className="flex-1 flex flex-col bg-white">
-            {communities.map((community, idx) => (
+            {communities.map((community: string, idx: number) => (
               <motion.div 
                 key={idx} 
                 initial={{ opacity: 0, x: -20 }}
@@ -51,15 +56,15 @@ export const Education: React.FC = () => {
         {/* Right Column: Education & Certs */}
         <div className="w-full md:w-1/2 flex flex-col">
           <div className="p-6 md:p-12 lg:p-16 border-b border-black">
-            <div className="font-mono text-[10px] md:text-xs uppercase tracking-widest text-gray-400 mb-4">EDUCAÇÃO ACADÊMICA</div>
-            <p className="font-display text-2xl md:text-3xl uppercase mb-2">Engenharia de Software</p>
+            <div className="font-mono text-[10px] md:text-xs uppercase tracking-widest text-gray-400 mb-4">{t('education.academicTitle')}</div>
+            <p className="font-display text-2xl md:text-3xl uppercase mb-2">{t('education.academicDegree')}</p>
             <p className="text-sm text-gray-600 uppercase font-mono tracking-widest">UTFPR / 2024</p>
           </div>
           
           <div className="p-6 md:p-12 lg:p-16 bg-gray-50 flex-1 flex flex-col justify-center">
-            <div className="font-mono text-[10px] md:text-xs uppercase tracking-widest text-gray-400 mb-8 border-b border-black pb-4">CERTIFICAÇÕES OFICIAIS</div>
+            <div className="font-mono text-[10px] md:text-xs uppercase tracking-widest text-gray-400 mb-8 border-b border-black pb-4">{t('education.certTitle')}</div>
             <ul className="flex flex-col gap-6">
-              {certifications.map((cert, idx) => (
+              {certifications.map((cert: string, idx: number) => (
                 <motion.li 
                   key={idx} 
                   initial={{ opacity: 0, x: 20 }}

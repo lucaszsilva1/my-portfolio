@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const Manifesto: React.FC = () => {
+  const { t } = useLanguage();
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -19,25 +21,28 @@ export const Manifesto: React.FC = () => {
           
           <motion.div style={{ y: yText }} className="lg:col-span-8 flex flex-col justify-center relative z-20 mix-blend-difference pointer-events-none">
             <div className="font-mono text-xs uppercase tracking-widest mb-8 text-gray-400">
-              02. O MANIFESTO
+              {t('manifesto.subtitle')}
             </div>
             {/* The title overlaps the image column slightly because of extreme text size and difference blend */}
             <h2 className="font-display text-[clamp(4rem,10vw,12rem)] leading-[0.85] tracking-tighter uppercase mb-12 whitespace-nowrap min-w-max">
-              OWNERSHIP <br/>
-              <span className="text-outline-white text-[transparent]">RADICAL</span>
+              {t('manifesto.title').split(' ').map((term: string, i: number) => (
+                <span key={i}>
+                  {term} {i === 0 && <br/>}
+                </span>
+              ))}
             </h2>
           </motion.div>
 
           {/* Text Content Block */}
           <div className="lg:col-span-4 lg:col-start-1 flex flex-col gap-8 max-w-xl z-20 relative">
               <p className="text-sm md:text-base leading-relaxed uppercase text-gray-300">
-                Atuo na intersecção exata entre tecnologia, dados e estratégia de negócio. Como especialista no ecossistema <strong className="text-white">Google Cloud (GCP)</strong>, minha missão é clara:
+                {t('manifesto.text1')}
               </p>
               <p className="text-sm md:text-base leading-relaxed uppercase text-gray-300">
-                Transformar dados brutos em soluções que geram <strong className="text-white">ROI real</strong>, reduzindo custos operacionais e otimizando malhas logísticas complexas em larga escala.
+                {t('manifesto.text2')}
               </p>
               <p className="text-sm md:text-base leading-relaxed uppercase text-white font-bold border-l-2 border-white pl-4">
-                Meu foco é um só: traduzir complexidade técnica em eficiência operacional e milhões em valor real.
+                {t('manifesto.text3')}
               </p>
           </div>
 

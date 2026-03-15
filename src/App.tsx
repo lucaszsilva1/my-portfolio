@@ -8,10 +8,12 @@ import { Arsenal } from './components/sections/Arsenal';
 import { Education } from './components/sections/Education';
 import { GlobalImpact } from './components/sections/GlobalImpact';
 import { Contact } from './components/sections/Contact';
+import { LanguageProvider } from './context/LanguageContext';
 
 export default function App() {
   return (
-    <div className="min-h-screen w-full bg-white text-black font-sans selection:bg-black selection:text-white relative">
+    <LanguageProvider>
+      <div className="min-h-screen w-full bg-white text-black font-sans selection:bg-black selection:text-white relative">
       <div className="bg-noise" aria-hidden="true"></div>
       
       <Navigation />
@@ -25,6 +27,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-    </div>
+      </div>
+    </LanguageProvider>
   );
 }

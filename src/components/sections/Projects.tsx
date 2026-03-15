@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { AnimatedCounter } from '../ui/AnimatedCounter';
 import { projects } from '../../data/projects';
+import { useLanguage } from '../../context/LanguageContext';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -11,13 +12,16 @@ const fadeInUp = {
 };
 
 export const Projects: React.FC = () => {
+  const { t } = useLanguage();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const translatedItems = t('projects.items');
 
   return (
     <section id="projects" className="py-24 md:py-32 px-6 bg-white text-black border-b border-black">
       <div className="max-w-7xl mx-auto">
         <motion.div {...fadeInUp} className="font-mono text-xs uppercase tracking-widest mb-16 flex items-center justify-between">
-          <span>03. PROJETOS DE DESTAQUE & IMPACTO</span>
+          <span>{t('projects.subtitle')}</span>
           <span className="hidden md:block w-1/3 h-px bg-black/20"></span>
         </motion.div>
 
@@ -25,6 +29,7 @@ export const Projects: React.FC = () => {
           {projects.map((project, index) => {
             const isHovered = hoveredIndex === index;
             const isOtherHovered = hoveredIndex !== null && hoveredIndex !== index;
+            const translated = translatedItems[index];
 
             return (
               <div 
@@ -49,15 +54,15 @@ export const Projects: React.FC = () => {
                 
                 <div className="font-mono text-xs uppercase tracking-widest mb-8 text-gray-400 relative z-10 flex items-center gap-4">
                   <span className={`w-4 h-px transition-colors duration-300 ${isHovered ? 'bg-white' : 'bg-black'}`}></span>
-                  {project.category}
+                  {translated.category}
                 </div>
                 
                 <h3 className={`font-bold text-2xl uppercase mb-4 transition-transform duration-300 relative z-10 ${isHovered ? 'translate-x-4' : 'translate-x-0'}`}>
-                  {project.title}
+                  {translated.title}
                 </h3>
                 
                 <p className={`text-sm leading-relaxed transition-colors duration-300 relative z-10 ${isHovered ? 'text-gray-300' : 'text-gray-700'}`}>
-                  {project.description}
+                  {translated.description}
                 </p>
 
                 {/* Arrow indicator */}

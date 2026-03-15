@@ -1,46 +1,45 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const GlobalImpact: React.FC = () => {
-  return (
-    <section id="impact" className="py-24 md:py-32 bg-black text-white flex flex-col justify-center overflow-hidden border-b border-black">
-      
-      {/* Infinite Marquee Section */}
-      <div className="w-full relative py-12 md:py-24 overflow-hidden border-y-2 border-white bg-black text-white flex items-center">
-        {/* Adds an internal wrapper to ensure smooth repeating flex behavior */}
-        <div className="animate-marquee flex gap-16 font-display text-[clamp(5rem,10vw,12rem)] uppercase leading-none tracking-tighter">
-          {/* Repeated items for a continuous looping effect */}
-          {[1, 2, 3, 4].map((i) => (
-            <span key={i} className="whitespace-nowrap shrink-0 flex items-center gap-16">
-              <span>
-                DADOS SÃO INOVAÇÃO <span className="text-outline-white text-transparent">SEM DESCULPAS</span>
-              </span>
-              <span className="text-white/30">—</span>
-            </span>
-          ))}
-        </div>
-      </div>
+  const { t } = useLanguage();
 
-      <div className="max-w-7xl mx-auto px-6 mt-16 md:mt-32 pb-8">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+  return (
+    <section id="impact" className="py-24 md:py-32 bg-white text-black flex flex-col justify-center overflow-hidden border-b border-black">
+      
+      <div className="max-w-7xl mx-auto px-6 w-full text-center">
+        
+        <motion.h2 
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-6 md:gap-12 font-mono text-[10px] md:text-sm uppercase tracking-widest text-gray-400"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="font-display text-[clamp(2.5rem,6vw,7rem)] uppercase leading-none tracking-tighter mb-16"
         >
-          <div className="flex items-center gap-4 text-white font-bold bg-white/10 px-6 py-3 border border-white/20">
+          {t('impact.mainText')}
+        </motion.h2>
+
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 md:gap-8 font-mono text-[10px] md:text-sm uppercase tracking-widest text-gray-500"
+        >
+          <div className="flex items-center gap-3 text-black font-bold">
             <span className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-40"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-40"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-black"></span>
             </span>
-            <span>DISPONÍVEL GLOBALMENTE</span>
+            <span>{t('impact.available')}</span>
           </div>
-          <span className="hidden md:block text-gray-700">/</span>
-          <span className="hover:text-white transition-colors cursor-default">FOCADO EM DESAFIOS COMPLEXOS</span>
-          <span className="hidden md:block text-gray-700">/</span>
-          <span className="hover:text-white transition-colors cursor-default">ABERTO A REALOCAÇÃO</span>
+          <span className="hidden md:block text-gray-300">/</span>
+          <span className="hover:text-black transition-colors cursor-default">{t('impact.challenges')}</span>
+          <span className="hidden md:block text-gray-300">/</span>
+          <span className="hover:text-black transition-colors cursor-default">{t('impact.relocation')}</span>
         </motion.div>
+
       </div>
 
     </section>

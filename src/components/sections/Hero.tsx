@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { useLanguage } from '../../context/LanguageContext';
 
 const sentence = {
   hidden: { opacity: 1 },
@@ -22,6 +23,8 @@ const letter = {
 };
 
 export const Hero: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="min-h-[90vh] flex flex-col justify-center px-6 py-20 lg:py-32 border-b border-black bg-transparent text-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col items-end text-right">
@@ -32,7 +35,7 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="font-mono text-xs uppercase tracking-widest mb-12 border-b border-black pb-4 w-full md:w-1/2"
         >
-          01. LUCAS SOUZA SILVA — AI & SOFTWARE ENGINEER
+          {t('hero.meta')}
         </motion.div>
         
         <motion.h1 
@@ -41,9 +44,9 @@ export const Hero: React.FC = () => {
           animate="visible"
           className="font-display text-[clamp(4rem,10vw,12rem)] leading-[0.85] tracking-tighter uppercase mb-16"
         >
-          <motion.span variants={letter} className="block">IA + ENGENHARIA:</motion.span>
-          <motion.span variants={letter} className="block">O CÓDIGO QUE</motion.span>
-          <motion.span variants={letter} className="block text-outline">IMPULSIONA O ROI.</motion.span>
+          <motion.span variants={letter} className="block">{t('hero.title1')}</motion.span>
+          <motion.span variants={letter} className="block">{t('hero.title2')}</motion.span>
+          <motion.span variants={letter} className="block text-outline">{t('hero.title3')}</motion.span>
         </motion.h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full mt-8">
@@ -57,7 +60,7 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-base md:text-lg leading-relaxed uppercase font-medium max-w-md text-justify"
             >
-              Construindo soluções End-to-End que convertem dados complexos em eficiência operacional e valor estratégico real, aplicando brutalismo visual para garantir impacto e autoridade técnica.
+              {t('hero.desc')}
             </motion.h2>
 
             <motion.div 
@@ -71,7 +74,7 @@ export const Hero: React.FC = () => {
                 href="#projects" 
                 className="font-display text-2xl md:text-3xl uppercase hover:text-gray-500 transition-colors w-fit relative group flex items-center gap-4"
               >
-                VER IMPACTO
+                {t('hero.ctaImpact')}
                 <span className="w-12 h-px bg-black group-hover:w-20 transition-all"></span>
               </motion.a>
               <motion.a 
@@ -79,7 +82,7 @@ export const Hero: React.FC = () => {
                 href="#contact" 
                 className="font-display text-2xl md:text-3xl uppercase hover:text-gray-500 transition-colors w-fit relative group flex items-center gap-4"
               >
-                INICIAR PROJETO
+                {t('hero.ctaStart')}
                 <span className="w-12 h-px bg-black group-hover:w-20 transition-all"></span>
               </motion.a>
             </motion.div>
