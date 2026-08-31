@@ -25,30 +25,74 @@ export const translations = {
       text3: "My focus is singular: translating technical complexity into operational efficiency and millions in real value."
     },
     projects: {
-      subtitle: "03. SELECTED IMPACT",
+      subtitle: "03. SELECTED IMPACT & PROJECTS",
       desc: "CASES THAT DEFINE MY TECHNICAL ARSENAL AND BUSINESS IMPACT.",
       counterLabel: "SUCCESSFUL DEPLOYMENTS",
       visit: "EXPLORE",
+      roleLabel: "MY ROLE & IMPACT",
+      contextLabel: "STRATEGIC CONTEXT",
+      viewDetails: "EXPAND IMPACT ANALYSIS",
+      hideDetails: "COLLAPSE DETAILS",
       items: [
         {
-          category: "LOGISTICS OPTIMIZATION",
-          title: "Intelligent Radar",
-          description: "Leading development of an E2E geo-analytical platform (Python/React) for infrastructure decisions, optimizing the logistics network by 15%."
+          id: "projeto-afrodite",
+          impactValue: "$800M",
+          impactLabel: "DIRECTED INVESTMENT",
+          category: "MANUFACTURING FOOTPRINT",
+          title: "Project Aphrodite (Manufacturing Expansion & Strategy)",
+          context: "Strategic footprint and network design for a new manufacturing plant (10-year horizon).",
+          roleImpact: "Led data integration across BigQuery datalakes, developed interactive choropleth maps, and built an executive 'Bluebook' portal for C-level investment decisions.",
+          techTags: ["Python", "BigQuery", "SQL", "Otimix", "HTML"]
         },
         {
-          category: "STOCKOUT REDUCTION",
-          title: "Predictive Demand Model",
-          description: "18% reduction in stockouts using time series analysis and advanced predictive modeling."
+          id: "radar-inteligente",
+          impactValue: "$80M",
+          impactLabel: "DIRECTED INVESTMENT",
+          category: "OPERATIONS INTELLIGENCE",
+          title: "Intelligent Operations Radar",
+          context: "Automated capacity management (GCAP) tool functioning as an intelligent long-term strategic signal.",
+          roleImpact: "Architected the ETL pipeline (Cloud Storage, Dataprep) and bridged UX/UI with operations to engineer high-precision Tableau data models.",
+          techTags: ["Tableau", "GCP", "ETL", "S&OP"]
         },
         {
-          category: "CAPEX ALOCATION",
-          title: "Optimization System",
-          description: "Geospatial solution (Python + QGIS) to optimize the allocation of 1 million euros in industrial investments."
+          id: "digital-twin",
+          impactValue: "$60K",
+          impactLabel: "FINANCIAL IMPACT",
+          category: "DIGITAL TWIN & ASSETS",
+          title: "Distribution Center Digital Twin",
+          context: "Implementation of point cloud technology for millimetric Distribution Center infrastructure management.",
+          roleImpact: "Spearheaded technical data governance, ensuring end-to-end data integrity between physical warehouse facilities and digital systems.",
+          techTags: ["3D Scanning", "Point Cloud", "Asset Management"]
         },
         {
-          category: "STRATEGIC DECISIONS",
-          title: "Interactive Dashboard",
-          description: "Creation of an interactive dashboard that consolidated complex data and supported strategic investment decisions of around 700 million euros."
+          id: "vocacao-cds",
+          impactValue: "$40M",
+          impactLabel: "FINANCIAL IMPACT",
+          category: "NETWORK OPTIMIZATION",
+          title: "National Distribution Centers Network Profiling",
+          context: "Strategic definition of fulfillment and DC profiles to optimize customer lead time and reduce logistics operational expenditure.",
+          roleImpact: "Conducted deep analysis of slow-moving inventory and simulated supply chain scenarios for the Executive Committee alongside top-tier global consultancies.",
+          techTags: ["Data Analysis", "Inventory Modeling", "Business Cases"]
+        },
+        {
+          id: "control-tower",
+          impactValue: "$10M",
+          impactLabel: "FINANCIAL IMPACT",
+          category: "SUPPLY CHAIN CONTROL TOWER",
+          title: "Demand & Supply Control Tower",
+          context: "Automated alert engine for stockout prevention and lead time predictability.",
+          roleImpact: "Engineered the BigQuery/Dataflow data platform (Bronze, Silver, Gold layers) driving smart inventory alerts with an estimated $2M direct return, integrated with Gemini Enterprise AI agents.",
+          techTags: ["BigQuery", "Dataflow", "Advanced SQL", "Gemini Enterprise"]
+        },
+        {
+          id: "sistema-abastecimento",
+          impactValue: "$5M",
+          impactLabel: "FINANCIAL IMPACT",
+          category: "SUPPLY AUTOMATION",
+          title: "Automated Supply & Replenishment System",
+          context: "Multi-brand replenishment engine automating calculations across 25 million SKUs per month.",
+          roleImpact: "Governed the data pipeline end-to-end, achieving a 50% reduction in operational manual effort and a 15% increase in replenishment accuracy.",
+          techTags: ["BigQuery", "Google Workspace", "Automation"]
         }
       ]
     },
@@ -136,26 +180,70 @@ export const translations = {
       desc: "CASES QUE DEFINEM O MEU ARSENAL TÉCNICO E IMPACTO DE NEGÓCIO.",
       counterLabel: "PROJETOS COMPLETADOS",
       visit: "EXPLORAR",
+      roleLabel: "MEU PAPEL & IMPACTO",
+      contextLabel: "CONTEXTO ESTRATÉGICO",
+      viewDetails: "EXPANDIR ANÁLISE DE IMPACTO",
+      hideDetails: "RECOLHER DETALHES",
       items: [
         {
-          category: "OTIMIZAÇÃO LOGÍSTICA",
-          title: "Radar Inteligente",
-          description: "Liderança no desenvolvimento de plataforma geoanalítica E2E (Python/React) para decisões de infraestrutura, otimizando a rede logística em 15%."
+          id: "projeto-afrodite",
+          impactValue: "R$ 4 Bi",
+          impactLabel: "INVESTIMENTO DIRECIONADO",
+          category: "ESTRATÉGIA FABRIL",
+          title: "Projeto Afrodite (Expansão e Estratégia Fabril)",
+          context: "Footprint estratégico e desenho de malha logística para nova planta fabril (horizonte de 10 anos).",
+          roleImpact: "Liderou a integração de dados (datalakes BigQuery), criou mapas coropléticos interativos e construiu o site 'Bluebook' para tomada de decisão da diretoria executiva.",
+          techTags: ["Python", "BigQuery", "SQL", "Otimix", "HTML"]
         },
         {
-          category: "REDUÇÃO DE STOCKOUTS",
-          title: "Modelo Preditivo de Demanda",
-          description: "Redução de 18% em rupturas de estoque utilizando análise de séries temporais e modelos preditivos avançados."
+          id: "radar-inteligente",
+          impactValue: "R$ 400 Mi",
+          impactLabel: "INVESTIMENTO DIRECIONADO",
+          category: "INTELIGÊNCIA OPERACIONAL",
+          title: "Radar Inteligente de Operações",
+          context: "Ferramenta de gestão de capacidade automatizada (GCAP) atuando como sinalizador inteligente de decisão a longo prazo.",
+          roleImpact: "Arquiteto do pipeline de ETL (Cloud Storage, Dataprep) e ponte entre UX/UI e operações na construção de modelos Tableau de alta precisão.",
+          techTags: ["Tableau", "GCP", "ETL", "S&OP"]
         },
         {
-          category: "ALOCAÇÃO DE CAPEX",
-          title: "Sistema de Otimização",
-          description: "Solução geoespacial (Python + QGIS) para otimização da alocação de 1 milhão de euros em investimentos industriais."
+          id: "digital-twin",
+          impactValue: "R$ 300 Mil",
+          impactLabel: "IMPACTO FINANCEIRO",
+          category: "DIGITAL TWIN & ATIVOS",
+          title: "Digital Twin - Centro de Distribuição",
+          context: "Implementação de tecnologia de nuvem de pontos para gestão precisa da infraestrutura de Centros de Distribuição.",
+          roleImpact: "Liderou a governança técnica, garantindo a integridade dos dados entre plantas físicas e sistemas digitais.",
+          techTags: ["3D Scanning", "Point Cloud", "Asset Management"]
         },
         {
-          category: "DECISÕES ESTRATÉGICAS",
-          title: "Painel Interativo",
-          description: "Criação de painel interativo que consolidou dados complexos e apoiou decisão estratégica de investimento na casa dos 700 milhões de euros."
+          id: "vocacao-cds",
+          impactValue: "R$ 200 Mi",
+          impactLabel: "IMPACTO FINANCEIRO",
+          category: "OTIMIZAÇÃO DE MALHA",
+          title: "Vocação dos Centros de Distribuição Nacionais",
+          context: "Definição estratégica de perfis de CDs para otimização do lead time e redução de custos operacionais.",
+          roleImpact: "Analisou estoques de baixo giro e modelou cenários para o comitê executivo em conjunto com consultorias globais.",
+          techTags: ["Data Analysis", "Inventory Modeling", "Business Cases"]
+        },
+        {
+          id: "control-tower",
+          impactValue: "R$ 50 Mi",
+          impactLabel: "IMPACTO FINANCEIRO",
+          category: "CONTROL TOWER DE SUPRIMENTOS",
+          title: "Control Tower de Demanda e Abastecimento",
+          context: "Alertas automatizados para rupturas de estoque e previsibilidade de prazos de entrega.",
+          roleImpact: "Construiu a esteira BigQuery/Dataflow (camadas Bronze, Silver, Gold) habilitando alertas inteligentes com retorno estimado de R$ 10M, além de agentes de IA Gemini Enterprise.",
+          techTags: ["BigQuery", "Dataflow", "Advanced SQL", "Gemini Enterprise"]
+        },
+        {
+          id: "sistema-abastecimento",
+          impactValue: "R$ 25 Mi",
+          impactLabel: "IMPACTO FINANCEIRO",
+          category: "AUTOMAÇÃO DE ABASTECIMENTO",
+          title: "Sistema Automatizado de Abastecimento",
+          context: "Ferramenta multimarca para automação do cálculo de suprimentos (25 milhões de SKUs/mês).",
+          roleImpact: "Governança da esteira de dados, resultando em 50% de redução no esforço operacional e 15% de aumento em precisão.",
+          techTags: ["BigQuery", "Google Workspace", "Automation"]
         }
       ]
     },
