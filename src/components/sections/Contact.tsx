@@ -13,7 +13,7 @@ export const Contact: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-mono text-xs uppercase tracking-widest mb-16 text-gray-400 pt-16 border-t border-white/20 w-full"
+          className="font-mono text-xs uppercase tracking-[0.2em] font-medium mb-16 text-gray-400 pt-16 border-t border-white/20 w-full"
         >
           {t('contact.subtitle')}
         </motion.div>
@@ -22,7 +22,7 @@ export const Contact: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-display text-[clamp(4rem,10vw,12rem)] leading-[0.8] tracking-tighter uppercase mb-16"
+          className="font-display font-medium text-[clamp(3.5rem,8.5vw,10rem)] leading-[0.9] tracking-tight uppercase mb-16"
         >
           {t('contact.title').split(' ').map((term: string, i: number) => (
             <React.Fragment key={i}>
@@ -42,14 +42,14 @@ export const Contact: React.FC = () => {
             href="https://www.linkedin.com/in/olucass-silva/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="group flex items-center justify-between gap-8 font-mono text-sm md:text-base uppercase tracking-widest bg-white text-black px-8 py-5 hover:bg-gray-200 transition-colors focus:outline-none"
+            className="group flex items-center justify-between gap-8 font-mono text-xs md:text-sm uppercase tracking-[0.2em] font-medium bg-white text-black px-8 py-5 hover:bg-gray-200 transition-colors focus:outline-none"
           >
             <span>{t('contact.linkedin')}</span>
             <span className="font-display text-xl transition-transform group-hover:translate-x-2 group-hover:-translate-y-2">↗</span>
           </a>
           <a 
             href="mailto:contato.lucas.silvatec15@gmail.com" 
-            className="group flex items-center justify-between gap-8 font-mono text-sm md:text-base uppercase tracking-widest border border-white px-8 py-5 hover:bg-white hover:text-black transition-colors focus:outline-none"
+            className="group flex items-center justify-between gap-8 font-mono text-xs md:text-sm uppercase tracking-[0.2em] font-medium border border-white px-8 py-5 hover:bg-white hover:text-black transition-colors focus:outline-none"
           >
             <span>{t('contact.email')}</span>
             <span className="font-display text-xl transition-transform group-hover:translate-x-2 group-hover:-translate-y-2">↗</span>
@@ -58,7 +58,7 @@ export const Contact: React.FC = () => {
             href="https://github.com/lucaszsilva1" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="group flex items-center justify-between gap-8 font-mono text-sm md:text-base uppercase tracking-widest border border-white px-8 py-5 hover:bg-white hover:text-black transition-colors focus:outline-none"
+            className="group flex items-center justify-between gap-8 font-mono text-xs md:text-sm uppercase tracking-[0.2em] font-medium border border-white px-8 py-5 hover:bg-white hover:text-black transition-colors focus:outline-none"
           >
             <span>{t('contact.github')}</span>
             <span className="font-display text-xl transition-transform group-hover:translate-x-2 group-hover:-translate-y-2">↗</span>

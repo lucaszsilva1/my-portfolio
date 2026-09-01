@@ -20,11 +20,11 @@ export const Manifesto: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           
           <motion.div style={{ y: yText }} className="lg:col-span-8 flex flex-col justify-center relative z-20 mix-blend-difference pointer-events-none">
-            <div className="font-mono text-xs uppercase tracking-widest mb-8 text-gray-400">
+            <div className="font-mono text-xs uppercase tracking-[0.2em] font-medium mb-8 text-gray-400">
               {t('manifesto.subtitle')}
             </div>
             {/* The title overlaps the image column slightly because of extreme text size and difference blend */}
-            <h2 className="font-display text-[clamp(4rem,10vw,12rem)] leading-[0.85] tracking-tighter uppercase mb-12 whitespace-nowrap min-w-max">
+            <h2 className="font-display font-medium text-[clamp(3.5rem,8.5vw,10.5rem)] leading-[0.95] tracking-tight uppercase mb-12 whitespace-nowrap min-w-max">
               {t('manifesto.title').split(' ').map((term: string, i: number) => (
                 <span key={i}>
                   {term} {i === 0 && <br/>}
@@ -35,13 +35,13 @@ export const Manifesto: React.FC = () => {
 
           {/* Text Content Block */}
           <div className="lg:col-span-4 lg:col-start-1 flex flex-col gap-8 max-w-xl z-20 relative">
-              <p className="text-sm md:text-base leading-relaxed uppercase text-gray-300">
+              <p className="text-sm md:text-base leading-[1.8] text-gray-300 font-sans">
                 {t('manifesto.text1')}
               </p>
-              <p className="text-sm md:text-base leading-relaxed uppercase text-gray-300">
+              <p className="text-sm md:text-base leading-[1.8] text-gray-300 font-sans">
                 {t('manifesto.text2')}
               </p>
-              <p className="text-sm md:text-base leading-relaxed uppercase text-white font-bold border-l-2 border-white pl-4">
+              <p className="text-sm md:text-base leading-[1.8] text-white font-medium italic border-l-2 border-white pl-4 font-serif">
                 {t('manifesto.text3')}
               </p>
           </div>
@@ -59,7 +59,7 @@ export const Manifesto: React.FC = () => {
                  className="relative z-10 w-full h-[600px] object-cover grayscale contrast-125 brightness-90 border border-white/20"
                  referrerPolicy="no-referrer"
                />
-               <div className="absolute -bottom-6 -left-6 font-mono text-[10px] uppercase tracking-widest text-white/50 rotate-90 origin-bottom-left">
+               <div className="absolute -bottom-6 -left-6 font-mono text-[10px] uppercase tracking-[0.2em] text-white/50 rotate-90 origin-bottom-left font-medium">
                   SYSTEM_CORE_ENGINEER_V1
                </div>
             </div>

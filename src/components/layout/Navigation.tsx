@@ -11,12 +11,12 @@ export const Navigation: React.FC = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         href="#" 
-        className="font-display text-xl md:text-2xl tracking-tight uppercase hover:opacity-50 transition-opacity focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+        className="font-display font-bold text-xl md:text-2xl tracking-wider uppercase hover:opacity-50 transition-opacity focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
       >
         LUCAS_
       </motion.a>
       
-      <div className="hidden md:flex gap-2 text-xs font-mono uppercase tracking-widest">
+      <div className="hidden md:flex gap-2 text-xs font-mono uppercase tracking-[0.2em] font-medium">
         <motion.a 
            whileHover={{ scale: 1.05, y: -2 }}
            whileTap={{ scale: 0.95 }}
@@ -44,16 +44,16 @@ export const Navigation: React.FC = () => {
       </div>
 
       <div className="flex items-center gap-4">
-        <div className="flex border border-black font-mono text-[10px] uppercase overflow-hidden">
+        <div className="flex border border-black font-mono text-[11px] uppercase tracking-wider overflow-hidden">
           <button 
             onClick={() => setLocale('en')}
-            className={`px-3 py-1.5 transition-colors ${locale === 'en' ? 'bg-black text-white' : 'bg-white text-black hover:bg-gray-100'}`}
+            className={`px-3 py-1.5 transition-colors font-medium ${locale === 'en' ? 'bg-black text-white' : 'bg-white text-black hover:bg-gray-100'}`}
           >
             EN
           </button>
           <button 
             onClick={() => setLocale('pt')}
-            className={`px-3 py-1.5 border-l border-black transition-colors ${locale === 'pt' ? 'bg-black text-white' : 'bg-white text-black hover:bg-gray-100'}`}
+            className={`px-3 py-1.5 border-l border-black transition-colors font-medium ${locale === 'pt' ? 'bg-black text-white' : 'bg-white text-black hover:bg-gray-100'}`}
           >
             PT
           </button>
@@ -64,7 +64,7 @@ export const Navigation: React.FC = () => {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           href="#contact" 
-          className="text-[10px] md:text-xs font-mono uppercase tracking-widest bg-black text-white px-4 md:px-6 py-3 hover:bg-white hover:text-black border border-black transition-colors focus:outline-none"
+          className="text-[11px] md:text-xs font-mono uppercase tracking-[0.2em] font-medium bg-black text-white px-4 md:px-6 py-3 hover:bg-white hover:text-black border border-black transition-colors focus:outline-none"
         >
           {t('nav.contact')}
         </motion.a>

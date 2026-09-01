@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="font-mono text-xs uppercase tracking-widest mb-12 border-b border-black pb-4 w-full md:w-1/2"
+          className="font-mono text-xs uppercase tracking-[0.2em] font-medium mb-12 border-b border-black pb-4 w-full md:w-1/2"
         >
           {t('hero.meta')}
         </motion.div>
@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
           variants={sentence}
           initial="hidden"
           animate="visible"
-          className="font-display text-[clamp(4rem,10vw,12rem)] leading-[0.85] tracking-tighter uppercase mb-16"
+          className="font-display font-medium text-[clamp(3.75rem,9.5vw,11rem)] leading-[0.92] tracking-tight uppercase mb-16"
         >
           <motion.span variants={letter} className="block">{t('hero.title1')}</motion.span>
           <motion.span variants={letter} className="block">{t('hero.title2')}</motion.span>
@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-base md:text-lg leading-relaxed uppercase font-medium max-w-md text-justify"
+              className="font-sans text-base md:text-lg leading-[1.8] font-normal max-w-md text-justify text-gray-800"
             >
               {t('hero.desc')}
             </motion.h2>
@@ -70,17 +70,17 @@ export const Hero: React.FC = () => {
               className="flex flex-col items-end gap-6"
             >
               <motion.a 
-                whileHover={{ scale: 1.05, x: -10 }}
+                whileHover={{ scale: 1.03, x: -10 }}
                 href="#projects" 
-                className="font-display text-2xl md:text-3xl uppercase hover:text-gray-500 transition-colors w-fit relative group flex items-center gap-4"
+                className="font-display font-medium text-2xl md:text-3xl uppercase hover:text-gray-600 transition-colors w-fit relative group flex items-center gap-4"
               >
                 {t('hero.ctaImpact')}
                 <span className="w-12 h-px bg-black group-hover:w-20 transition-all"></span>
               </motion.a>
               <motion.a 
-                whileHover={{ scale: 1.05, x: -10 }}
+                whileHover={{ scale: 1.03, x: -10 }}
                 href="#contact" 
-                className="font-display text-2xl md:text-3xl uppercase hover:text-gray-500 transition-colors w-fit relative group flex items-center gap-4"
+                className="font-display font-medium text-2xl md:text-3xl uppercase hover:text-gray-600 transition-colors w-fit relative group flex items-center gap-4"
               >
                 {t('hero.ctaStart')}
                 <span className="w-12 h-px bg-black group-hover:w-20 transition-all"></span>

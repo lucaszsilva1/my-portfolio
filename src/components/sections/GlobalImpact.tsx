@@ -15,7 +15,7 @@ export const GlobalImpact: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="font-display text-[clamp(2.5rem,6vw,7rem)] uppercase leading-none tracking-tighter mb-16"
+          className="font-display font-medium text-[clamp(2.5rem,5.5vw,6rem)] uppercase leading-[1.05] tracking-tight mb-16"
         >
           {t('impact.mainText')}
         </motion.h2>
@@ -25,7 +25,7 @@ export const GlobalImpact: React.FC = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 md:gap-8 font-mono text-[10px] md:text-sm uppercase tracking-widest text-gray-500"
+          className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 md:gap-8 font-mono text-[11px] md:text-sm uppercase tracking-[0.2em] font-medium text-gray-500"
         >
           <div className="flex items-center gap-3 text-black font-bold">
             <span className="relative flex h-3 w-3">

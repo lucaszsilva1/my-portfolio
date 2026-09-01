@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="py-8 md:py-12 px-6 bg-white text-black border-t border-black">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 font-mono text-[10px] md:text-xs uppercase tracking-widest">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] font-medium">
         <div className="flex flex-col gap-2">
           <span className="font-bold">© {new Date().getFullYear()} LUCAS SOUZA SILVA</span>
           <span className="text-gray-500">{t('footer.copyright')}</span>

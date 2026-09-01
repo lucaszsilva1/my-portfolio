@@ -39,7 +39,7 @@ export const Projects: React.FC = () => {
     <section id="projects" className="py-24 md:py-32 px-6 bg-white text-black border-b border-black">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <motion.div {...fadeInUp} className="font-mono text-xs uppercase tracking-widest mb-16 flex items-center justify-between">
+        <motion.div {...fadeInUp} className="font-mono text-xs uppercase tracking-[0.2em] font-medium mb-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="inline-block w-2 h-2 bg-black"></span>
             <span>{t('projects.subtitle')}</span>
@@ -73,18 +73,18 @@ export const Projects: React.FC = () => {
                   <span className="font-mono text-xs font-semibold text-gray-400 group-hover:text-black transition-colors">
                     [{String(index + 1).padStart(2, '0')}]
                   </span>
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-black bg-gray-100 px-2 py-0.5 border border-black/20">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.15em] font-medium text-black bg-gray-100 px-2.5 py-0.5 border border-black/20">
                     {project.category}
                   </span>
                 </div>
 
                 {/* Hero Impact Metric Block */}
                 <div className="p-6 md:p-8 pt-6 pb-6 bg-gray-50/50 group-hover:bg-black group-hover:text-white transition-colors duration-300 border-b border-black/10">
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-gray-500 group-hover:text-gray-400 mb-1 flex items-center gap-2">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.2em] font-medium text-gray-500 group-hover:text-gray-400 mb-1 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-none"></span>
                     {project.impactLabel}
                   </div>
-                  <div className="font-display text-[clamp(2.75rem,5vw,4.25rem)] leading-none tracking-tight">
+                  <div className="font-display font-medium text-[clamp(2.75rem,5vw,4.25rem)] leading-none tracking-tight">
                     {project.impactValue}
                   </div>
                 </div>
@@ -92,15 +92,15 @@ export const Projects: React.FC = () => {
                 {/* Project Core Content */}
                 <div className="p-6 md:p-8 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="font-sans font-bold text-lg md:text-xl uppercase tracking-tight mb-3 text-black">
+                    <h3 className="font-display font-semibold text-xl md:text-2xl tracking-normal mb-3 text-black">
                       {project.title}
                     </h3>
                     
                     <div className="mb-6">
-                      <div className="font-mono text-[10px] uppercase tracking-widest text-gray-400 mb-1">
+                      <div className="font-mono text-[10px] uppercase tracking-[0.2em] font-medium text-gray-400 mb-1">
                         {contextLabel}
                       </div>
-                      <p className="text-sm text-gray-700 leading-relaxed font-sans">
+                      <p className="text-sm text-gray-700 leading-[1.75] font-sans font-normal">
                         {project.context}
                       </p>
                     </div>
@@ -111,7 +111,7 @@ export const Projects: React.FC = () => {
                     <button
                       type="button"
                       onClick={() => toggleExpand(project.id)}
-                      className="w-full font-mono text-[11px] uppercase tracking-wider py-2.5 px-3 border border-black flex items-center justify-between text-black hover:bg-black hover:text-white transition-colors duration-200 cursor-pointer mb-6"
+                      className="w-full font-mono text-[11px] uppercase tracking-[0.18em] font-medium py-2.5 px-3 border border-black flex items-center justify-between text-black hover:bg-black hover:text-white transition-colors duration-200 cursor-pointer mb-6"
                       aria-expanded={isExpanded}
                     >
                       <span>{isExpanded ? hideDetailsText : viewDetailsText}</span>
@@ -131,10 +131,10 @@ export const Projects: React.FC = () => {
                           className="overflow-hidden"
                         >
                           <div className="mb-6 p-4 bg-gray-50 border-l-2 border-black">
-                            <div className="font-mono text-[10px] uppercase tracking-widest font-bold text-black mb-2">
+                            <div className="font-mono text-[10px] uppercase tracking-[0.2em] font-bold text-black mb-2">
                               {roleLabel}
                             </div>
-                            <p className="text-xs md:text-sm text-gray-800 leading-relaxed font-sans">
+                            <p className="text-xs md:text-sm text-gray-800 leading-[1.75] font-sans font-normal">
                               {project.roleImpact}
                             </p>
                           </div>
@@ -148,7 +148,7 @@ export const Projects: React.FC = () => {
                         {project.techTags.map((tag, tIdx) => (
                           <span
                             key={tIdx}
-                            className="font-mono text-[10px] uppercase px-2 py-1 bg-white border border-black/20 text-gray-800 hover:border-black transition-colors"
+                            className="font-mono text-[10px] uppercase tracking-wider px-2 py-1 bg-white border border-black/20 text-gray-800 hover:border-black transition-colors font-medium"
                           >
                             {tag}
                           </span>
