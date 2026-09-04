@@ -5,6 +5,7 @@ import { Hero } from './components/sections/Hero';
 import { Manifesto } from './components/sections/Manifesto';
 import { Projects } from './components/sections/Projects';
 import { Arsenal } from './components/sections/Arsenal';
+import { Certifications } from './components/sections/Certifications';
 import { Education } from './components/sections/Education';
 import { GlobalImpact } from './components/sections/GlobalImpact';
 import { Contact } from './components/sections/Contact';
@@ -22,6 +23,7 @@ export default function App() {
         <Manifesto />
         <Projects />
         <Arsenal />
+        <Certifications />
         <Education />
         <GlobalImpact />
         <Contact />

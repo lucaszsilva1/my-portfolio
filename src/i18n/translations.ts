@@ -6,6 +6,7 @@ export const translations = {
       manifesto: "Manifesto",
       impact: "Impact",
       arsenal: "Arsenal",
+      certifications: "Certifications",
       contact: "CONTACT _/"
     },
     hero: {
@@ -117,8 +118,54 @@ export const translations = {
         }
       ]
     },
+    certifications: {
+      subtitle: "05. BADGES & CERTIFICATIONS",
+      title: "VALIDATED MASTERY",
+      desc: "OFFICIAL ACCREDITATIONS VALIDATING END-TO-END COMPETENCE IN AI, DATA LAKEHOUSE, AND CLOUD INFRASTRUCTURE.",
+      badgeVerified: "VERIFIED CREDENTIAL",
+      badgeOfficial: "OFFICIAL ACCREDITATION",
+      filterAll: "ALL",
+      filterAi: "AI & GENAI",
+      filterData: "DATA & LAKEHOUSE",
+      filterCloud: "CLOUD & INFRA",
+      filterAgile: "METHODOLOGY",
+      viewCert: "VIEW CERTIFICATE",
+      verifyOnline: "VERIFY ONLINE",
+      downloadPdf: "DOWNLOAD PDF",
+      close: "CLOSE PREVIEW",
+      accreditedSkills: "CORE COMPETENCIES",
+      issuedOn: "ISSUED",
+      credentialId: "CREDENTIAL ID",
+      items: {
+        googleAi: {
+          title: "Google AI Fundamentals",
+          category: "AI & Large Language Models",
+          desc: "Rigorous certification authorized by Google and offered through Coursera, proving core mastery of Generative AI, Large Language Models (LLMs), prompt engineering paradigms, and responsible AI system design."
+        },
+        databricksFundamentals: {
+          title: "Databricks Fundamentals Accreditation",
+          category: "Lakehouse & Big Data",
+          desc: "Official accreditation by Databricks Academy establishing proficiency in the unified Databricks Lakehouse architecture, Delta Lake transaction layers, Apache Spark distributed compute, and data intelligence engines."
+        },
+        gcpCore: {
+          title: "Google Cloud Core Infrastructure",
+          category: "Cloud Infrastructure",
+          desc: "Comprehensive foundation in Google Cloud Platform architecture, enterprise IAM access control, VPC network topology, BigQuery analytics, and high-availability workload deployment."
+        },
+        sixSigma: {
+          title: "Lean Six Sigma White Belt",
+          category: "Operational Excellence",
+          desc: "Demonstrated grounding in Lean Six Sigma process improvement, DMAIC roadmap, root-cause analysis, and systematic waste elimination across industrial and operational workflows."
+        },
+        agilePm: {
+          title: "Agile Project Management",
+          category: "Methodology & Delivery",
+          desc: "Applied competency in agile product delivery, Scrum team ceremonies, sprint velocity optimization, backlog prioritization, and iterative software development lifecycles."
+        }
+      }
+    },
     education: {
-      subtitle: "05. COMMUNITY & EDUCATION",
+      subtitle: "06. COMMUNITY & EDUCATION",
       communityTitle: "COMMUNITY & TALKS",
       communityDesc: "SHARING KNOWLEDGE ON GENERATIVE AI, DATA, AND SOFTWARE ENGINEERING.",
       communities: [
@@ -127,7 +174,7 @@ export const translations = {
       ],
       academicTitle: "ACADEMIC EDUCATION",
       academicDegree: "B.S. in Software Engineering",
-      certTitle: "OFFICIAL CERTIFICATIONS",
+      certTitle: "ADDITIONAL ACCREDITATIONS",
       certifications: [
         "GOOGLE CLOUD CORE INFRASTRUCTURE",
         "LEAN SIX SIGMA WHITE BELT",
@@ -141,7 +188,7 @@ export const translations = {
       relocation: "OPEN TO RELOCATION"
     },
     contact: {
-      subtitle: "06. NEXT STEPS",
+      subtitle: "07. NEXT STEPS",
       title: "LET'S BUILD.",
       linkedin: "LINKEDIN",
       email: "E-MAIL",
@@ -157,6 +204,7 @@ export const translations = {
       manifesto: "Manifesto",
       impact: "Impacto",
       arsenal: "Arsenal",
+      certifications: "Certificações",
       contact: "CONTATO _/"
     },
     hero: {
@@ -268,8 +316,54 @@ export const translations = {
         }
       ]
     },
+    certifications: {
+      subtitle: "05. BADGES & CERTIFICAÇÕES",
+      title: "AUTORIDADE VALIDADA",
+      desc: "ACREDITAÇÕES OFICIAIS COMPROVANDO DOMÍNIO TÉCNICO END-TO-END EM INTELIGÊNCIA ARTIFICIAL, DATA LAKEHOUSE E CLOUD INFRASTRUCTURE.",
+      badgeVerified: "CREDENCIAL VERIFICADA",
+      badgeOfficial: "ACREDITAÇÃO OFICIAL",
+      filterAll: "TODAS",
+      filterAi: "IA & GENAI",
+      filterData: "DADOS & LAKEHOUSE",
+      filterCloud: "CLOUD & INFRA",
+      filterAgile: "METODOLOGIA",
+      viewCert: "VER CERTIFICADO",
+      verifyOnline: "VALIDAR ONLINE",
+      downloadPdf: "BAIXAR PDF",
+      close: "FECHAR VISUALIZAÇÃO",
+      accreditedSkills: "COMPETÊNCIAS VALIDADAS",
+      issuedOn: "EMISSÃO",
+      credentialId: "ID DA CREDENCIAL",
+      items: {
+        googleAi: {
+          title: "Google AI Fundamentals",
+          category: "IA & Grandes Modelos de Linguagem",
+          desc: "Certificação rigorosa autorizada pela Google e emitida pelo Coursera, comprovando domínio em IA Generativa, Large Language Models (LLMs), engenharia de prompts e design ético de sistemas inteligentes."
+        },
+        databricksFundamentals: {
+          title: "Databricks Fundamentals Accreditation",
+          category: "Lakehouse & Big Data",
+          desc: "Acreditação oficial pela Databricks Academy comprovando fluência na arquitetura unificada de Lakehouse, camadas transacionais Delta Lake, processamento distribuído com Apache Spark e inteligência de dados."
+        },
+        gcpCore: {
+          title: "Google Cloud Core Infrastructure",
+          category: "Infraestrutura Cloud",
+          desc: "Fundamentos consolidados em arquitetura GCP, controle de acesso e governança IAM, topologia de redes VPC, datalakes BigQuery e alta disponibilidade em nuvem."
+        },
+        sixSigma: {
+          title: "Lean Six Sigma White Belt",
+          category: "Excelência Operacional",
+          desc: "Aplicação prática dos princípios de melhoria contínua, ciclo DMAIC, análise estatística de causa-raiz e eliminação metódica de desperdícios em operações complexas."
+        },
+        agilePm: {
+          title: "Gerenciamento Ágil de Projetos",
+          category: "Metodologia & Entrega",
+          desc: "Competência aplicada em governança e entrega ágil, cerimônias de sprint Scrum, gestão de backlog, aumento de cadência e ciclos de release contínuos."
+        }
+      }
+    },
     education: {
-      subtitle: "05. COMUNIDADE & FORMAÇÃO",
+      subtitle: "06. COMUNIDADE & FORMAÇÃO",
       communityTitle: "COMUNIDADE & PALESTRAS",
       communityDesc: "COMPARTILHANDO CONHECIMENTO SOBRE IA GENERATIVA, DADOS E ENGENHARIA DE SOFTWARE.",
       communities: [
@@ -278,7 +372,7 @@ export const translations = {
       ],
       academicTitle: "FORMAÇÃO ACADÊMICA",
       academicDegree: "Bacharelado em Engenharia de Software",
-      certTitle: "CERTIFICAÇÕES OFICIAIS",
+      certTitle: "ACREDITAÇÕES ADICIONAIS",
       certifications: [
         "GOOGLE CLOUD CORE INFRASTRUCTURE",
         "LEAN SIX SIGMA WHITE BELT",
@@ -292,7 +386,7 @@ export const translations = {
       relocation: "ABERTO A REALOCAÇÃO"
     },
     contact: {
-      subtitle: "06. PRÓXIMOS PASSOS",
+      subtitle: "07. PRÓXIMOS PASSOS",
       title: "VAMOS CONSTRUIR.",
       linkedin: "LINKEDIN",
       email: "E-MAIL",

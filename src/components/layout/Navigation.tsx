@@ -41,6 +41,14 @@ export const Navigation: React.FC = () => {
         >
           {t('nav.arsenal')}
         </motion.a>
+        <motion.a 
+           whileHover={{ scale: 1.05, y: -2 }}
+           whileTap={{ scale: 0.95 }}
+           href="#certifications" 
+           className="relative hover:bg-black hover:text-white px-4 py-2 transition-colors focus:outline-none"
+        >
+          {t('nav.certifications')}
+        </motion.a>
       </div>
 
       <div className="flex items-center gap-4">
