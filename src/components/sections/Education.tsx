@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { communities, certifications } from '../../data/skills';
 import { useLanguage } from '../../context/LanguageContext';
 
 const fadeInUp = {

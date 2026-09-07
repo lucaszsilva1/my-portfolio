@@ -137,6 +137,11 @@ export const translations = {
       issuedOn: "ISSUED",
       credentialId: "CREDENTIAL ID",
       items: {
+        awsGenAi: {
+          title: "AWS Generative AI for Developers",
+          category: "AWS & Generative AI",
+          desc: "Official certification authorized by Amazon Web Services (AWS) and offered through Coursera, validating competencies in building generative AI applications, leveraging foundation models, Amazon Bedrock, and developer-focused generative AI solutions."
+        },
         googleAi: {
           title: "Google AI Fundamentals",
           category: "AI & Large Language Models",
@@ -335,6 +340,11 @@ export const translations = {
       issuedOn: "EMISSÃO",
       credentialId: "ID DA CREDENCIAL",
       items: {
+        awsGenAi: {
+          title: "AWS Generative AI for Developers",
+          category: "AWS & IA Generativa",
+          desc: "Certificação oficial autorizada pela Amazon Web Services (AWS) e emitida pelo Coursera, comprovando domínio na construção de aplicações com IA Generativa, utilização de foundation models, Amazon Bedrock e soluções de engenharia para desenvolvedores."
+        },
         googleAi: {
           title: "Google AI Fundamentals",
           category: "IA & Grandes Modelos de Linguagem",

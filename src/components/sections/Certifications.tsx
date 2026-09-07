@@ -103,7 +103,7 @@ export const Certifications: React.FC = () => {
         </div>
 
         {/* Featured Credentials Showcase (with High-res Certificate Previews) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {filteredCerts
             .filter((cert) => cert.featured)
             .map((cert, index) => {

@@ -15,6 +15,19 @@ export interface Certification {
 
 export const certificationsData: Certification[] = [
   {
+    id: 'aws-genai-developers',
+    titleKey: 'awsGenAi',
+    issuer: 'AWS (Coursera)',
+    category: 'ai',
+    issueDate: '2026.09',
+    credentialId: '83H0S1FQV4LS',
+    verifyUrl: 'https://coursera.org/verify/83H0S1FQV4LS',
+    certificatePdf: '/certificates/aws-generative-ai.pdf',
+    previewImage: '/certificates/aws-generative-ai.png',
+    skills: ['AWS Generative AI', 'Amazon Bedrock', 'Foundation Models', 'Prompt Engineering'],
+    featured: true
+  },
+  {
     id: 'google-ai-fundamentals',
     titleKey: 'googleAi',
     issuer: 'Google (Coursera)',
