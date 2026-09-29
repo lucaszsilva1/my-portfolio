@@ -137,6 +137,11 @@ export const translations = {
       issuedOn: "ISSUED",
       credentialId: "CREDENTIAL ID",
       items: {
+        databricksAiAgents: {
+          title: "Databricks Accredited AI Agent Fundamentals",
+          category: "AI & Multi-Agent Systems",
+          desc: "Official accreditation by Databricks Academy establishing proficiency in designing, evaluating, and deploying enterprise AI Agents, tool calling workflows, and compound AI systems on the Databricks Lakehouse platform."
+        },
         awsGenAi: {
           title: "AWS Generative AI for Developers",
           category: "AWS & Generative AI",
@@ -340,6 +345,11 @@ export const translations = {
       issuedOn: "EMISSÃO",
       credentialId: "ID DA CREDENCIAL",
       items: {
+        databricksAiAgents: {
+          title: "Databricks Accredited AI Agent Fundamentals",
+          category: "IA & Sistemas Multi-Agente",
+          desc: "Acreditação oficial pela Databricks Academy comprovando domínio no desenvolvimento, avaliação e implantação de Agentes de IA corporativos, orquestração de ferramentas e sistemas de IA compostos no Databricks Lakehouse."
+        },
         awsGenAi: {
           title: "AWS Generative AI for Developers",
           category: "AWS & IA Generativa",

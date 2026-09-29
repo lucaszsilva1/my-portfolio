@@ -15,6 +15,17 @@ export interface Certification {
 
 export const certificationsData: Certification[] = [
   {
+    id: 'databricks-ai-agents',
+    titleKey: 'databricksAiAgents',
+    issuer: 'Databricks Academy',
+    category: 'ai',
+    issueDate: '2026.09',
+    certificatePdf: '/certificates/databricks-ai-agent-fundamentals.pdf',
+    previewImage: '/certificates/databricks-ai-agent-fundamentals.png',
+    skills: ['AI Agents', 'Multi-Agent Systems', 'Tool Calling', 'Databricks Lakehouse AI', 'Compound AI Systems'],
+    featured: true
+  },
+  {
     id: 'aws-genai-developers',
     titleKey: 'awsGenAi',
     issuer: 'AWS (Coursera)',
