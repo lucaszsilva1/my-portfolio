@@ -239,63 +239,65 @@ export const Certifications: React.FC = () => {
         </div>
 
         {/* Supporting Accreditations Grid */}
-        <div className="border border-black bg-white">
-          <div className="p-4 md:p-6 bg-black text-white border-b border-black flex items-center justify-between">
-            <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] font-medium">
-              <CheckCircle2 className="w-4 h-4" />
-              <span>{t('certifications.badgeOfficial')}</span>
+        {filteredCerts.some((cert) => !cert.featured) && (
+          <div className="border border-black bg-white">
+            <div className="p-4 md:p-6 bg-black text-white border-b border-black flex items-center justify-between">
+              <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] font-medium">
+                <CheckCircle2 className="w-4 h-4" />
+                <span>{t('certifications.badgeOfficial')}</span>
+              </div>
+              <span className="font-mono text-xs text-gray-400">FOUNDATIONAL / DOMAIN MASTERY</span>
             </div>
-            <span className="font-mono text-xs text-gray-400">FOUNDATIONAL / DOMAIN MASTERY</span>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black">
-            {filteredCerts
-              .filter((cert) => !cert.featured)
-              .map((cert, idx) => {
-                const itemTitle = t(`certifications.items.${cert.titleKey}.title`);
-                const itemDesc = t(`certifications.items.${cert.titleKey}.desc`);
+            <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black">
+              {filteredCerts
+                .filter((cert) => !cert.featured)
+                .map((cert, idx) => {
+                  const itemTitle = t(`certifications.items.${cert.titleKey}.title`);
+                  const itemDesc = t(`certifications.items.${cert.titleKey}.desc`);
 
-                return (
-                  <motion.div
-                    key={cert.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: idx * 0.1 }}
-                    className="p-6 md:p-8 flex flex-col justify-between hover:bg-gray-50 transition-colors group"
-                  >
-                    <div>
-                      <div className="flex items-center justify-between text-gray-400 font-mono text-[11px] uppercase tracking-wider mb-4">
-                        <span>{cert.issuer}</span>
-                        <span>{cert.issueDate}</span>
+                  return (
+                    <motion.div
+                      key={cert.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: idx * 0.1 }}
+                      className="p-6 md:p-8 flex flex-col justify-between hover:bg-gray-50 transition-colors group"
+                    >
+                      <div>
+                        <div className="flex items-center justify-between text-gray-400 font-mono text-[11px] uppercase tracking-wider mb-4">
+                          <span>{cert.issuer}</span>
+                          <span>{cert.issueDate}</span>
+                        </div>
+
+                        <h4 className="font-display font-semibold text-xl uppercase tracking-normal mb-3 group-hover:underline">
+                          {itemTitle}
+                        </h4>
+
+                        <p className="text-xs leading-relaxed text-gray-600 font-sans mb-6">
+                          {itemDesc}
+                        </p>
                       </div>
 
-                      <h4 className="font-display font-semibold text-xl uppercase tracking-normal mb-3 group-hover:underline">
-                        {itemTitle}
-                      </h4>
-
-                      <p className="text-xs leading-relaxed text-gray-600 font-sans mb-6">
-                        {itemDesc}
-                      </p>
-                    </div>
-
-                    <div>
-                      <div className="flex flex-wrap gap-1.5">
-                        {cert.skills.map((skill, i) => (
-                          <span 
-                            key={i}
-                            className="font-mono text-[10px] uppercase tracking-wide px-2 py-0.5 bg-gray-100 text-gray-700 border border-gray-200"
-                          >
-                            {skill}
-                          </span>
-                        ))}
+                      <div>
+                        <div className="flex flex-wrap gap-1.5">
+                          {cert.skills.map((skill, i) => (
+                            <span 
+                              key={i}
+                              className="font-mono text-[10px] uppercase tracking-wide px-2 py-0.5 bg-gray-100 text-gray-700 border border-gray-200"
+                            >
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  </motion.div>
-                );
-              })}
+                    </motion.div>
+                  );
+                })}
+            </div>
           </div>
-        </div>
+        )}
 
       </div>
 

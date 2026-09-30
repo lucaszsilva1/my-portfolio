@@ -158,9 +158,9 @@ export const translations = {
           desc: "Official accreditation by Databricks Academy establishing proficiency in the unified Databricks Lakehouse architecture, Delta Lake transaction layers, Apache Spark distributed compute, and data intelligence engines."
         },
         gcpCore: {
-          title: "Google Cloud Core Infrastructure",
+          title: "Google Cloud Fundamentals: Core Infrastructure",
           category: "Cloud Infrastructure",
-          desc: "Comprehensive foundation in Google Cloud Platform architecture, enterprise IAM access control, VPC network topology, BigQuery analytics, and high-availability workload deployment."
+          desc: "Official certification authorized by Google Cloud and offered through Coursera, validating core proficiency in Google Cloud Platform architecture, Compute Engine, VPC networking, storage solutions, and BigQuery analytics."
         },
         sixSigma: {
           title: "Lean Six Sigma White Belt",
@@ -186,7 +186,7 @@ export const translations = {
       academicDegree: "B.S. in Software Engineering",
       certTitle: "ADDITIONAL ACCREDITATIONS",
       certifications: [
-        "GOOGLE CLOUD CORE INFRASTRUCTURE",
+        "GOOGLE CLOUD FUNDAMENTALS: CORE INFRASTRUCTURE",
         "LEAN SIX SIGMA WHITE BELT",
         "AGILE PROJECT MANAGEMENT"
       ]
@@ -366,9 +366,9 @@ export const translations = {
           desc: "Acreditação oficial pela Databricks Academy comprovando fluência na arquitetura unificada de Lakehouse, camadas transacionais Delta Lake, processamento distribuído com Apache Spark e inteligência de dados."
         },
         gcpCore: {
-          title: "Google Cloud Core Infrastructure",
+          title: "Google Cloud Fundamentals: Core Infrastructure",
           category: "Infraestrutura Cloud",
-          desc: "Fundamentos consolidados em arquitetura GCP, controle de acesso e governança IAM, topologia de redes VPC, datalakes BigQuery e alta disponibilidade em nuvem."
+          desc: "Certificação oficial autorizada pela Google Cloud e emitida pelo Coursera, comprovando domínio em arquitetura Google Cloud Platform, Compute Engine, redes VPC, soluções de armazenamento e BigQuery."
         },
         sixSigma: {
           title: "Lean Six Sigma White Belt",
@@ -394,7 +394,7 @@ export const translations = {
       academicDegree: "Bacharelado em Engenharia de Software",
       certTitle: "ACREDITAÇÕES ADICIONAIS",
       certifications: [
-        "GOOGLE CLOUD CORE INFRASTRUCTURE",
+        "GOOGLE CLOUD FUNDAMENTALS: CORE INFRASTRUCTURE",
         "LEAN SIX SIGMA WHITE BELT",
         "GERENCIAMENTO ÁGIL DE PROJETOS"
       ]

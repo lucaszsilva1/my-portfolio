@@ -65,11 +65,15 @@ export const certificationsData: Certification[] = [
   {
     id: 'gcp-core-infrastructure',
     titleKey: 'gcpCore',
-    issuer: 'Google Cloud',
+    issuer: 'Google Cloud (Coursera)',
     category: 'cloud',
-    issueDate: '2024.11',
-    skills: ['Google Cloud Platform', 'BigQuery', 'Compute Engine', 'IAM & Cloud Security'],
-    featured: false
+    issueDate: '2026.09',
+    credentialId: '1UO9U25KT5RU',
+    verifyUrl: 'https://coursera.org/verify/1UO9U25KT5RU',
+    certificatePdf: '/certificates/gcp-core-infrastructure.pdf',
+    previewImage: '/certificates/gcp-core-infrastructure.png',
+    skills: ['Google Cloud Platform', 'Compute Engine', 'Cloud Storage', 'VPC Networking', 'BigQuery', 'IAM & Cloud Security'],
+    featured: true
   },
   {
     id: 'lean-six-sigma',
